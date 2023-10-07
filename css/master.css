@@ -114,7 +114,8 @@ section.home{
     width: 100%;
     height: calc(100vh - 75px);
     position: relative;
-    background-color: #48b1e5;
+    background-image: url(..//image/background.jpeg);
+    background-size: cover;
 }
 section.home .container{
     position: absolute;
@@ -132,6 +133,10 @@ section.home .container p{
     font-size: 16px;
     margin-top: -20px;
     width: fit-content;
+    color: #000000;
+}
+section.home .container p:hover {
+    color: #fff
 }
 @media (max-width: 991px) {
     section.home .container div{
@@ -203,56 +208,38 @@ section.upevent .event p a{
 }
 /* start about  kkkkkkkkkkkkkkk*/
 
-.about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.about p{
-    color: var(--second);
-    max-width: 400px;
-    margin: 20px;
-    font-size: 20px;
-}
-.about p span{
-    color: #48b1e5;
-    font-size: 40px;
-}
-.about .container{
+
+
+
+.persons{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px,450px));
+    grid-template-columns: repeat(auto-fill,minmax(200px,350px));
     padding: 50px;
 
 }
-.about .container .one{
+.persons .one{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
 }
-.about .container .one img{
-    max-width: 200px;
+.persons .one img{
+    width: 200px;
+    height: 200px;
+
     border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
 }
-.about .container div.name{
-    font-size: 22px;
-    color:#185776;
+
+
+.persons .one .name{
+    text-transform: capitalize;
+    font-style: italic;
 }
-.about .container div.jop{
-    font-size: 18px;
-    color: var(--second);
-}
-.about .container a{
-    font-size: 20px;
-    color: #185776;
-    cursor: pointer;
-    margin: 20px;
-    
-}
+
 /*  solution  
 
 
@@ -348,6 +335,7 @@ section.upevent .event p a{
     text-align: center;
     /* max-width: 700px; */
     margin-bottom: 20px;
+    margin-top: 20px;
 
  }
  .Aware p{
@@ -357,5 +345,18 @@ section.upevent .event p a{
     font-size: 16px;
     
 
+
+ }
+ .landing h1{
+    text-align: center;
+    font-size: 40px;
+    color: var(--main-color
+    );
+ }
+ .foot{
+    background-color: #48b1e5;
+    text-align: center;
+    height: px;
+    padding: 25px;
 
  }
