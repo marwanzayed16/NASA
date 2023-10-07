@@ -118,16 +118,17 @@ section.home{
 }
 section.home .container{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 section.home .container div{
     font-size: 80px;
+    margin-bottom: 30px;
     color: #fff;
 }
 section.home .container p{
-    transform: translateX(calc(100% - 50px));
+   max-width: 600px;
     font-size: 16px;
     margin-top: -20px;
     width: fit-content;
@@ -138,7 +139,7 @@ section.home .container p{
         color: #fff;
     }
     section.home .container p{
-        transform: translateX(calc(100% - 50px));
+        color: #4f4f50;
         font-size: 14px;
         margin-top: -15px;
     }
@@ -277,6 +278,10 @@ section.upevent .event p a{
     object-fit: cover;
 
 }
+.Solution p{
+    font-weight: 500;
+    font-size: 18px;
+}
  .Solution .child span {
     font-size: 18px;
     font-weight:700;
@@ -293,12 +298,12 @@ section.upevent .event p a{
  }
   @media (max-width: 767px) {
 .Solution .small-slider{
-    max-width: 400px;
+    max-width: 350px;
     min-width: 300px;
 
 }
 .Solution .child img{
-    max-width: 400px;
+    max-width: 350px;
     min-width: 300px;
     object-fit: cover;
     max-height: 300px;
@@ -338,4 +343,19 @@ section.upevent .event p a{
     object-fit: cover;
     height: 50vh;
  }
+ }
+ .Aware{
+    text-align: center;
+    /* max-width: 700px; */
+    margin-bottom: 20px;
+
+ }
+ .Aware p{
+    max-width: 800px;
+    padding: 10px;
+    margin: auto;
+    font-size: 16px;
+    
+
+
  }
