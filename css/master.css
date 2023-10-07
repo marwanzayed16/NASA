@@ -311,3 +311,31 @@ section.upevent .event p a{
  
  slider
  */
+ .big-slide{
+    width: 100%;
+    height: 100vh;
+ }
+ .big-slide img{
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+
+ }
+ .arrow{
+    text-align: center;
+    font-size: 30px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+ }
+ @media (max-width: 767px) {
+
+    .big-slide{
+    width: 100%;
+    height: 50vh;
+ }
+ .big-slide img{
+    width: 100%;
+    object-fit: cover;
+    height: 50vh;
+ }
+ }
