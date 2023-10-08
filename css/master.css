@@ -360,3 +360,44 @@ section.upevent .event p a{
     padding: 25px;
 
  }
+ .videos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,600px));
+    justify-content: space-between;
+    padding: 30px;
+    gap: 30px;
+
+ }
+ .videos .first{
+    max-width: 600px;
+    min-width: 200px;
+    min-height: 100px;
+ }
+ .videos .second{
+    max-width: 600px;
+    min-width: 200px;
+    min-height: 100px;
+
+ }
+ @media (max-width: 767px) {
+ .videos{
+    padding: 10px;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center ;
+    padding: auto;
+ }
+
+    .videos .first{
+    max-width: 320px;
+    margin: auto;
+   
+ }
+ .videos .second{
+    max-width: 320px;
+    margin: auto;
+
+  
+
+ }
+ }
